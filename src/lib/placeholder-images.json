@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "event1",
+      "description": "Annual OT Security Summit",
+      "imageUrl": "https://images.unsplash.com/photo-1700936655615-65a2aef3b4e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25mZXJlbmNlJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NjIyODI1MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "conference technology"
+    },
+    {
+      "id": "event2",
+      "description": "Webinar on Securing Industrial Control Systems",
+      "imageUrl": "https://images.unsplash.com/photo-1753272691001-4d68806ac590?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwY29udHJvbHxlbnwwfHx8fDE3NjIyODI1MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial control"
+    },
+    {
+      "id": "article1",
+      "description": "Article on Ransomware in OT Environments",
+      "imageUrl": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjeWJlciUyMHNlY3VyaXR5fGVufDB8fHx8MTc2MjI3Nzc4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cyber security"
+    },
+    {
+      "id": "article2",
+      "description": "Article on Network Segmentation",
+      "imageUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXR3b3JrJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MHx8fHwxNzYyMjgxNjY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "network infrastructure"
+    },
+    {
+      "id": "team",
+      "description": "Team collaboration",
+      "imageUrl": "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjIyNzQ3Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team collaboration"
+    },
+    {
+      "id": "member1",
+      "description": "Profile picture of a member",
+      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIxODc0NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "member2",
+      "description": "Profile picture of a member",
+      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIxODc0NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "member3",
+      "description": "Profile picture of a member",
+      "imageUrl": "https://images.unsplash.com/photo-1544168190-79c17527004f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyMTg3NDU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "community-banner",
+      "description": "Banner for community page",
+      "imageUrl": "https://images.unsplash.com/photo-1761250027507-c0be614c0254?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21tdW5pdHklMjBuZXR3b3JrfGVufDB8fHx8MTc2MjI4MjUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community network"
+    },
+    {
+      "id": "knowledge-hub-banner",
+      "description": "Banner for knowledge hub",
+      "imageUrl": "https://images.unsplash.com/photo-1568667256531-7d5ac92eaa7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaWJyYXJ5JTIwYm9va3N8ZW58MHx8fHwxNzYyMjc3Mzc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "library books"
+    },
+    {
+      "id": "events-banner",
+      "description": "Banner for events page",
+      "imageUrl": "https://images.unsplash.com/photo-1617196288062-49bf97a38d9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxldmVudCUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzYyMjgyNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "event conference"
+    }
+  ]
 }
