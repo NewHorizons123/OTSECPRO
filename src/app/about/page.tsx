@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const teamMembers = [
   { name: 'Asad Effendi', role: 'Founder and President @Secure Networks' },
   { name: 'Aadil Memon', role: 'OT Security Practitioner' },
-  { name: 'Muhammad Israr Khan', role: 'Deputy Manager OT Security at K - Electric' },
+  { name: 'Muhammad Israr Khan', role: 'Deputy Manager OT Security' },
 ];
 
 const objectives = [
