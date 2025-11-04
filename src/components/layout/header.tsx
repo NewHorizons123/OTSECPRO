@@ -16,6 +16,7 @@ const navLinks = [
   { href: '/knowledge-hub', label: 'Knowledge Hub' },
   { href: '/events', label: 'Events' },
   { href: '/glossary', label: 'Glossary' },
+  { href: '/ics-attack-timeline', label: 'ICS Attack Timeline' },
 ];
 
 export function Header() {

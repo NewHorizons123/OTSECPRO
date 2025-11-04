@@ -1,0 +1,275 @@
+
+{
+  "attacks": [
+    {
+      "name": "Siberian Pipeline Explosion",
+      "year": 1992,
+      "decade": "1990-1999",
+      "industry": "Oil-Gas",
+      "target": "Trans-Siberian Pipeline",
+      "method": "Trojanized SCADA Software",
+      "impact": "Massive explosion in the Trans-Siberian pipeline, causing significant economic damage to the Soviet Union."
+    },
+    {
+      "name": "Gazprom Trojan Attack",
+      "year": 1994,
+      "decade": "1990-1999",
+      "industry": "Oil-Gas",
+      "target": "Gazprom",
+      "method": "Trojan Horse Malware",
+      "impact": "Unauthorized access to Gazprom's control systems, potentially allowing manipulation of gas flow."
+    },
+    {
+      "name": "Worcester Airport ICS Hack",
+      "year": 1997,
+      "decade": "1990-1999",
+      "industry": "Transportation",
+      "target": "Worcester Airport",
+      "method": "Telephone System Intrusion",
+      "impact": "Disabled phone service and airport control tower communications for 6 hours."
+    },
+    {
+      "name": "Maroochy Water Services Attack",
+      "year": 2000,
+      "decade": "2000-2009",
+      "industry": "Water",
+      "target": "Maroochy Shire Council",
+      "method": "Insider Attack, Radio Transmitter",
+      "impact": "Release of 800,000 liters of raw sewage into local parks, rivers and a hotel property."
+    },
+    {
+      "name": "Davis-Besse Nuclear Plant Slammer Infection",
+      "year": 2003,
+      "decade": "2000-2009",
+      "industry": "Nuclear",
+      "target": "Davis-Besse Nuclear Power Plant",
+      "method": "SQL Slammer Worm",
+      "impact": "Safety monitoring system disabled for nearly 5 hours."
+    },
+    {
+      "name": "Stuxnet",
+      "year": 2010,
+      "decade": "2010-2019",
+      "industry": "Nuclear",
+      "target": "Iran's Natanz Nuclear Facility",
+      "method": "Specialized Malware, Zero-day Exploits",
+      "impact": "Destroyed approximately 1,000 IR-1 centrifuges, setting back Iran's uranium enrichment program."
+    },
+    {
+      "name": "Night Dragon",
+      "year": 2011,
+      "decade": "2010-2019",
+      "industry": "Oil-Gas",
+      "target": "Global Oil, Energy, and Petrochemical Companies",
+      "method": "Spear-phishing, Social Engineering",
+      "impact": "Theft of proprietary operations information, project financing data, and bidding information."
+    },
+    {
+      "name": "Shamoon / Saudi Aramco Attack",
+      "year": 2012,
+      "decade": "2010-2019",
+      "industry": "Oil-Gas",
+      "target": "Saudi Aramco",
+      "method": "Wiper Malware",
+      "impact": "Destroyed data on 30,000+ workstations, disrupted business operations for weeks."
+    },
+    {
+      "name": "German Steel Mill Attack",
+      "year": 2014,
+      "decade": "2010-2019",
+      "industry": "Manufacturing",
+      "target": "Unnamed German Steel Mill",
+      "method": "Spear-phishing, Social Engineering",
+      "impact": "Massive physical damage to a blast furnace that could not be properly shut down."
+    },
+    {
+      "name": "HAVEX/Dragonfly Campaign",
+      "year": 2014,
+      "decade": "2010-2019",
+      "industry": "Energy",
+      "target": "Energy Sector Organizations in US and Europe",
+      "method": "Watering Hole Attacks, Trojanized Software",
+      "impact": "Espionage, potential preparation for future attacks on industrial systems."
+    },
+    {
+      "name": "Ukraine Power Grid Attack",
+      "year": 2015,
+      "decade": "2010-2019",
+      "industry": "Energy",
+      "target": "Ukrainian Regional Electric Power Companies",
+      "method": "BlackEnergy Malware, Spear-phishing",
+      "impact": "Power outage affecting 230,000 customers for up to 6 hours in the middle of winter."
+    },
+    {
+      "name": "Industroyer / Crash Override",
+      "year": 2016,
+      "decade": "2010-2019",
+      "industry": "Energy",
+      "target": "Ukrenergo (Ukrainian Power Grid)",
+      "method": "Specialized ICS Malware",
+      "impact": "Power outage in Kiev for approximately 1 hour."
+    },
+    {
+      "name": "Kemuri Water Company Attack",
+      "year": 2016,
+      "decade": "2010-2019",
+      "industry": "Water",
+      "target": "Unnamed US Water Utility (Kemuri Water Company - pseudonym)",
+      "method": "Web Application Exploitation, Lateral Movement",
+      "impact": "Manipulation of chemical levels in water treatment (detected before harm occurred)."
+    },
+    {
+      "name": "TRITON / TRISIS",
+      "year": 2017,
+      "decade": "2010-2019",
+      "industry": "Manufacturing",
+      "target": "Saudi Arabian Petrochemical Plant",
+      "method": "Specialized Safety System Malware",
+      "impact": "Unplanned shutdown of industrial processes; could have led to catastrophic safety failures."
+    },
+    {
+      "name": "NotPetya Global Attack",
+      "year": 2017,
+      "decade": "2010-2019",
+      "industry": "Manufacturing",
+      "target": "Multiple Global Companies (including Maersk, Merck, Mondelez)",
+      "method": "Destructive Malware, Supply Chain Attack",
+      "impact": "Over $10 billion in damages globally, disrupted manufacturing and logistics operations worldwide."
+    },
+    {
+      "name": "Norsk Hydro Ransomware Attack",
+      "year": 2019,
+      "decade": "2010-2019",
+      "industry": "Manufacturing",
+      "target": "Norsk Hydro",
+      "method": "LockerGoga Ransomware",
+      "impact": "Production stopped or switched to manual operations at multiple plants, $75 million in damages."
+    },
+    {
+      "name": "Kudankulam Nuclear Power Plant Attack",
+      "year": 2019,
+      "decade": "2010-2019",
+      "industry": "Nuclear",
+      "target": "Kudankulam Nuclear Power Plant, India",
+      "method": "DTRACK Malware",
+      "impact": "Data exfiltration from administrative network (contained before reaching critical systems)."
+    },
+    {
+      "name": "EKANS / Snake Ransomware",
+      "year": 2020,
+      "decade": "2020-2025",
+      "industry": "Manufacturing",
+      "target": "Industrial Organizations Globally",
+      "method": "ICS-aware Ransomware",
+      "impact": "Operational disruption, financial losses, and potential safety risks."
+    },
+    {
+      "name": "Israeli Water Facilities Attack",
+      "year": 2020,
+      "decade": "2020-2025",
+      "industry": "Water",
+      "target": "Multiple Israeli Water Treatment Facilities",
+      "method": "SCADA System Exploitation",
+      "impact": "Attempted manipulation of water treatment chemicals (largely unsuccessful)."
+    },
+    {
+      "name": "Oldsmar Water Treatment Facility Attack",
+      "year": 2021,
+      "decade": "2020-2025",
+      "industry": "Water",
+      "target": "Oldsmar, Florida Water Treatment Facility",
+      "method": "Remote Access Compromise",
+      "impact": "Attempted manipulation of sodium hydroxide levels in drinking water (prevented by operator intervention)."
+    },
+    {
+      "name": "Colonial Pipeline Ransomware Attack",
+      "year": 2021,
+      "decade": "2020-2025",
+      "industry": "Oil-Gas",
+      "target": "Colonial Pipeline",
+      "method": "Ransomware, VPN Compromise",
+      "impact": "Shutdown of 5,500 miles of pipeline for 6 days, fuel shortages across the US East Coast, $4.4 million ransom paid."
+    },
+    {
+      "name": "JBS Foods Ransomware Attack",
+      "year": 2021,
+      "decade": "2020-2025",
+      "industry": "Manufacturing",
+      "target": "JBS Foods",
+      "method": "REvil Ransomware",
+      "impact": "Shutdown of meat processing plants in US, Canada and Australia; $11 million ransom paid."
+    },
+    {
+      "name": "Industroyer2",
+      "year": 2022,
+      "decade": "2020-2025",
+      "industry": "Energy",
+      "target": "Ukrainian Electric Substations",
+      "method": "Specialized ICS Malware, Wiper Malware",
+      "impact": "Attempted blackout in Ukraine during Russian invasion (largely thwarted)."
+    },
+    {
+      "name": "Florida Water Treatment Plant HMI Intrusion",
+      "year": 2022,
+      "decade": "2020-2025",
+      "industry": "Water",
+      "target": "South Florida Water Treatment Facility",
+      "method": "Compromised HMI System",
+      "impact": "Unauthorized access to water treatment controls (detected before manipulation)."
+    },
+    {
+      "name": "Incontroller/Pipedream",
+      "year": 2022,
+      "decade": "2020-2025",
+      "industry": "Energy",
+      "target": "Liquefied Natural Gas Facilities and Electric Utilities",
+      "method": "Specialized ICS Malware Framework",
+      "impact": "No confirmed deployment, but capable of causing physical damage and safety incidents."
+    },
+    {
+      "name": "Lockbit Ransomware Attack on Port of Nagoya",
+      "year": 2023,
+      "decade": "2020-2025",
+      "industry": "Transportation",
+      "target": "Port of Nagoya, Japan",
+      "method": "Lockbit Ransomware",
+      "impact": "Disruption to Japan's busiest port, affecting cargo handling systems."
+    },
+    {
+      "name": "Raspberry Robin ICS Targeting",
+      "year": 2023,
+      "decade": "2020-2025",
+      "industry": "Manufacturing",
+      "target": "Multiple Industrial Organizations",
+      "method": "USB-spreading Malware, ICS Reconnaissance",
+      "impact": "Potential espionage and preparation for destructive attacks."
+    },
+    {
+      "name": "MOVEit Transfer Attacks on Critical Infrastructure",
+      "year": 2023,
+      "decade": "2020-2025",
+      "industry": "Energy",
+      "target": "Multiple Energy and Manufacturing Organizations",
+      "method": "Zero-day Exploitation, Data Theft",
+      "impact": "Exfiltration of sensitive operational data from multiple critical infrastructure entities."
+    },
+    {
+      "name": "Unified Threat Actor Campaign",
+      "year": 2024,
+      "decade": "2020-2025",
+      "industry": "Water",
+      "target": "US Water Utilities and Industrial Control Systems",
+      "method": "Remote Access Trojans, Custom ICS Malware",
+      "impact": "Persistent access to multiple water utility control systems."
+    },
+    {
+      "name": "Quantum Ransomware Attack on Critical Manufacturing",
+      "year": 2024,
+      "decade": "2020-2025",
+      "industry": "Manufacturing",
+      "target": "Global Manufacturing Supply Chains",
+      "method": "Advanced Ransomware, OT System Targeting",
+      "impact": "Production stoppages across multiple countries, supply chain disruptions."
+    }
+  ]
+}
