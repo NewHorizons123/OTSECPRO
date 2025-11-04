@@ -4,11 +4,12 @@ import { PageHeader } from '@/components/page-header';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardHeader } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { FileDown, Search, Award, ShieldCheck, CheckSquare, BookOpen } from 'lucide-react';
 import GlossaryData from '@/lib/glossary-terms.json';
 import type { Metadata } from 'next';
+import { CardContent, CardTitle, CardDescription } from '@/components/ui/card';
 
 type GlossaryTerm = {
   term: string;
@@ -65,26 +66,26 @@ export default function GlossaryPage() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-16">
             <Card>
-              <CardHeader>
-                <BookOpen className="h-8 w-8 mx-auto text-primary" />
+              <CardHeader className="items-center justify-center">
+                <BookOpen className="h-8 w-8 text-primary" />
                 <p className="font-bold text-2xl">{terms.length} Terms</p>
               </CardHeader>
             </Card>
             <Card>
-              <CardHeader>
-                <Award className="h-8 w-8 mx-auto text-primary" />
+              <CardHeader className="items-center justify-center">
+                <Award className="h-8 w-8 text-primary" />
                 <p className="font-bold text-2xl">Professional Grade</p>
               </CardHeader>
             </Card>
             <Card>
-              <CardHeader>
-                <ShieldCheck className="h-8 w-8 mx-auto text-primary" />
+              <CardHeader className="items-center justify-center">
+                <ShieldCheck className="h-8 w-8 text-primary" />
                 <p className="font-bold text-2xl">Industry Standard</p>
               </CardHeader>
             </Card>
             <Card>
-              <CardHeader>
-                <CheckSquare className="h-8 w-8 mx-auto text-primary" />
+              <CardHeader className="items-center justify-center">
+                <CheckSquare className="h-8 w-8 text-primary" />
                 <p className="font-bold text-2xl">Expert Curated</p>
               </CardHeader>
             </Card>
