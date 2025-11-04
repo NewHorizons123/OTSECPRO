@@ -1087,12 +1087,6 @@
       "definition": "Unauthorized or malicious devices connected to industrial networks that can disrupt operations, steal data, or provide adversaries with network access. Rogue device detection requires comprehensive network monitoring and asset management capabilities tailored to OT environments."
     },
     {
-      "term": "RTU (Remote Terminal Unit)",
-      "category": "OT Device/Component",
-      "section": "R",
-      "definition": "A field device that interfaces physical equipment to a SCADA system by collecting telemetry data and transmitting control commands."
-    },
-    {
       "term": "SAML",
       "category": "Other/General",
       "section": "S",
