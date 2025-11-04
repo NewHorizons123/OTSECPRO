@@ -1412,7 +1412,7 @@
     },
     {
       "term": "Yokogawa (Vendor Reference)",
-      "category": "Other/General",_`
+      "category": "Other/General",
       "section": "Y",
       "definition": "A major industrial automation vendor providing distributed control systems, safety instrumented systems, and other OT solutions. Like other major vendors, Yokogawa systems require proper security configuration and monitoring to protect against cyber threats."
     },
