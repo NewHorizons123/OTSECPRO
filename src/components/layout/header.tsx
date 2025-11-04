@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/community', label: 'Community' },
   { href: '/knowledge-hub', label: 'Knowledge Hub' },
   { href: '/events', label: 'Events' },
+  { href: '/glossary', label: 'Glossary' },
 ];
 
 export function Header() {
