@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -30,8 +31,14 @@ export function Footer() {
               <li><Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About Us</Link></li>
               <li><Link href="/events" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Events</Link></li>
               <li><Link href="/knowledge-hub" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Knowledge Hub</Link></li>
+            </ul>
+          </div>
+           <div>
+            <h3 className="font-semibold mb-4">Resources</h3>
+            <ul className="space-y-2">
               <li><Link href="/glossary" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Glossary</Link></li>
-              <li><Link href="/community" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Community</Link></li>
+              <li><Link href="/ics-attack-timeline" className="text-sm text-muted-foreground hover:text-foreground transition-colors">ICS Attack Timeline</Link></li>
+              <li><Link href="/resources/iec-62443" className="text-sm text-muted-foreground hover:text-foreground transition-colors">IEC 62443 Brief</Link></li>
             </ul>
           </div>
           <div>
@@ -39,6 +46,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li><Link href="/join" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Become a Member</Link></li>
               <li><Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact Us</Link></li>
+               <li><Link href="/community" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Community</Link></li>
             </ul>
           </div>
           <div>

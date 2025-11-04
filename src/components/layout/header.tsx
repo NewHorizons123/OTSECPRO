@@ -1,13 +1,20 @@
+
 'use client';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, ShieldCheck } from 'lucide-react';
+import { Menu, ShieldCheck, ChevronDown } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -15,13 +22,22 @@ const navLinks = [
   { href: '/community', label: 'Community' },
   { href: '/knowledge-hub', label: 'Knowledge Hub' },
   { href: '/events', label: 'Events' },
-  { href: '/glossary', label: 'Glossary' },
-  { href: '/ics-attack-timeline', label: 'ICS Attack Timeline' },
+  {
+    label: 'Resources',
+    items: [
+      { href: '/glossary', label: 'Glossary' },
+      { href: '/ics-attack-timeline', label: 'ICS Attack Timeline' },
+      { href: '/resources/iec-62443', label: 'IEC 62443 Brief' },
+    ],
+  },
 ];
 
 export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const isLinkActive = (href: string) => pathname === href;
+  const isDropdownActive = (items: { href: string }[]) => items.some(item => isLinkActive(item.href));
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -34,16 +50,40 @@ export function Header() {
           </Link>
           <nav className="flex items-center gap-6 text-sm">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'transition-colors hover:text-foreground/80',
-                  pathname === link.href ? 'text-foreground font-semibold' : 'text-foreground/60'
-                )}
-              >
-                {link.label}
-              </Link>
+              'items' in link ? (
+                <DropdownMenu key={link.label}>
+                  <DropdownMenuTrigger asChild>
+                    <Button
+                      variant="ghost"
+                      className={cn(
+                        'transition-colors hover:text-foreground/80 flex items-center gap-1 p-0 h-auto',
+                        isDropdownActive(link.items) ? 'text-foreground font-semibold' : 'text-foreground/60'
+                      )}
+                    >
+                      {link.label}
+                      <ChevronDown className="h-4 w-4" />
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="start">
+                    {link.items.map(item => (
+                      <DropdownMenuItem key={item.href} asChild>
+                        <Link href={item.href}>{item.label}</Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href!}
+                  className={cn(
+                    'transition-colors hover:text-foreground/80',
+                    isLinkActive(link.href!) ? 'text-foreground font-semibold' : 'text-foreground/60'
+                  )}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
           </nav>
         </div>
@@ -64,17 +104,36 @@ export function Header() {
               </Link>
               <div className="flex flex-col space-y-2 px-4">
                 {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={cn(
-                      'transition-colors hover:text-primary p-2 rounded-md',
-                      pathname === link.href ? 'bg-muted text-primary font-semibold' : 'text-foreground/70'
-                    )}
-                  >
-                    {link.label}
-                  </Link>
+                   'items' in link ? (
+                    <div key={link.label} className="flex flex-col space-y-1">
+                       <span className="text-foreground/70 font-semibold p-2">{link.label}</span>
+                       {link.items.map(item => (
+                         <Link
+                            key={item.href}
+                            href={item.href}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                             className={cn(
+                              'transition-colors hover:text-primary p-2 rounded-md pl-6',
+                              pathname === item.href ? 'bg-muted text-primary font-semibold' : 'text-foreground/70'
+                            )}
+                          >
+                           {item.label}
+                         </Link>
+                       ))}
+                    </div>
+                  ) : (
+                    <Link
+                      key={link.href}
+                      href={link.href!}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className={cn(
+                        'transition-colors hover:text-primary p-2 rounded-md',
+                        pathname === link.href ? 'bg-muted text-primary font-semibold' : 'text-foreground/70'
+                      )}
+                    >
+                      {link.label}
+                    </Link>
+                  )
                 ))}
               </div>
             </SheetContent>
