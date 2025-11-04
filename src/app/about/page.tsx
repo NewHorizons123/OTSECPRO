@@ -36,7 +36,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-              <Image src={PlaceHolderImages[4].imageUrl} alt="Industrial security operations center" data-ai-hint="industrial security" fill className="object-cover" />
+              <Image src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjeWJlcnNlY3VyaXR5fGVufDB8fHx8MTc2MjI4MzU4NHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Cybersecurity professional working on a laptop" data-ai-hint="cybersecurity professional" fill className="object-cover" />
             </div>
             <div>
               <h2 className="text-3xl font-bold tracking-tight">Our Vision</h2>
