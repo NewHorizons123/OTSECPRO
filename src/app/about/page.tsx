@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 const teamMembers = [
-  { name: 'Ahmad Khan', role: 'Founder & President', image: PlaceHolderImages[5] },
-  { name: 'Fatima Ali', role: 'Vice President', image: PlaceHolderImages[6] },
-  { name: 'Zainab Omar', role: 'Head of Community', image: PlaceHolderImages[7] },
+  { name: 'Asad Effendi', role: 'Founder and President @Secure Networks' },
+  { name: 'Aadil Memon', role: 'OT Security Practitioner' },
+  { name: 'Muhammad Israr Khan', role: 'Deputy Manager OT Security at K - Electric' },
 ];
 
 const objectives = [
@@ -76,8 +76,7 @@ export default function AboutPage() {
             {teamMembers.map((member) => (
               <Card key={member.name} className="text-center p-6 shadow-lg">
                 <Avatar className="h-24 w-24 mx-auto mb-4">
-                  <AvatarImage src={member.image.imageUrl} alt={member.name} />
-                  <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
+                  <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                 </Avatar>
                 <h3 className="text-xl font-semibold">{member.name}</h3>
                 <p className="text-primary">{member.role}</p>
